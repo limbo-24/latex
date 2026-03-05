@@ -1,0 +1,39 @@
+
+%%% Local Variables:
+%%% mode: Xelatex
+%%% TeX-master: t
+%%% End:
+
+\ctitle{有雾天气下的无人机航拍海上小目标检测方法研究\\
+\textcolor{red}{}}
+
+\xuehao{M202374083} \schoolcode{10487}
+\csubjectname{计算机技术} \cauthorname{潘颖鹏}
+\csupervisorname{孙伟平} \csupervisortitle{教授}
+\defencedate{202X~年~X~月~X~日} \grantdate{}
+\chair{}%
+\firstreviewer{} \secondreviewer{} \thirdreviewer{}
+
+\etitle{English Title，Times New Roman，小二号，实词的首字母大写\\
+\textcolor{red}{中英文标题、学科专业、导师姓名正确、一致}}
+\edegree{the Master Degree in Engineering} %（工学硕士）
+%\edegree{the Master Degree in Science}     %（理学硕士）
+%\edegree{the Professional Master Degree}   %(专业学位)
+\esubject{Control Science and Engineering}
+\eauthor{xxx（中文习惯，姓在前且姓全部大写）}
+\esupervisor{Prof. Xxxx}
+
+%定义中英文摘要和关键字
+\cabstract{
+海上无人机航拍在海事搜救与巡逻中具有重要应用价值，但复杂海洋背景、水面反光以及频发的海雾天气导致航拍图像质量严重退化。同时目标通常尺度微小且特征模糊，极易在复杂环境中发生漏检与误检。传统先去雾后检测的串行方法不仅计算冗余，且去雾过程容易破坏微弱目标的高频边缘，导致特征不匹配。针对上述挑战，本文以轻量级实时目标检测器为基准，提出一种面向海上雾天场景的物理先验引导轻量级目标检测算法。首先针对微小目标特征提取不足与端侧算力受限问题，构建了基于多维注意力机制的轻量化主干网络。采用较浅层的残差网络以满足实时性要求，并在残差模块中集成无参数三维能量注意力机制与倒残差多头自注意力模块，在抑制动态背景噪声的同时显著增强了小目标的底层特征表示能力。此外在特征融合编码器中引入级联分组注意力机制，通过特征切片与级联传递改善多尺度特征交互，提升密集小目标的感知精度。其次针对雾气退化带来的特征模糊问题，提出基于频域解耦与状态空间模型的环境先验提取模块。在特定特征层引入离散小波变换显式解耦高低频特征，截取低频近似子带送入具备线性复杂度全局感受野的状态空间模型中，提取蕴含雾气浓度分布的透射率特征图。同时设计物理引导特征融合模块，将透射率先验作为空间注意力权重与检测分支特征进行动态融合，引导检测器在浓雾区域进行特征补偿。最后为保障联合架构的稳定收敛，提出分阶段协作混合训练方案。通过重构去雾图像对雾检测分支进行独立预训练以保证物理先验的有效性，随后在端到端检测阶段利用一对多标签分配策略丰富正样本监督，在不增加推理成本的前提下全面提升了算法在恶劣雾天环境下的检测鲁棒性与定位精度。 
+}
+
+\ckeywords{关键词1；关键词2；关键词3}
+
+\eabstract{This is abstract.
+
+英文摘要字体为Times New Roman，小四，1.5倍行距。
+
+英文摘要和关键词应与中文相对应。英语摘要用词应准确，使用本学科通用的词汇；摘要中主语（作用）常常省略，因而一般使用被动语态；应使用正确的时态，并要注意主、谓语的一致，必要的冠词不能省略。}
+
+\ekeywords{Keyword1, Keyword2, Keyword3}
